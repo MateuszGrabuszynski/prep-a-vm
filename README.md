@@ -107,6 +107,22 @@ ip link set interface up
 5. Ping the IP address from host and check if it responses
 6. This can also go the other way around (guest -> host)
 
+## Add FQDN for simpler connections (optional)
+1. Go to hosts file
+```
+C:\Windows\System32\drivers\etc\hosts (Windows)
+/etc/hosts/ (Linux)
+```
+2. Add a line for redirecting traffic
+```
+ip_address[tab]fqdn
+```
+e.g.
+```
+192.168.11.11   my.vm
+```
+
+## Credits
 Based on:
 ```
 https://gist.github.com/estorgio/0c76e29c0439e683caca694f338d4003
